@@ -244,12 +244,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 
                 formSubmitBtn.innerText = "Sucesso!";
                 
+                // Redirecionamento real após 2 segundos para a plataforma
                 setTimeout(() => {
-                    formFeedback.innerHTML = "Redirecionando...";
-                    leadForm.reset();
-                    formSubmitBtn.disabled = false;
-                    formSubmitBtn.innerText = originalText;
-                }, 2500);
+                    window.location.href = "https://mapatalento.com.br/";
+                }, 2000);
                 
             }, 1500);
         });
